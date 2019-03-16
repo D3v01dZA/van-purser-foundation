@@ -512,6 +512,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #fff;
 }
 
+@media (max-width: 800px) {
+  #about .about-content {
+    text-align: center;
+  }
+}
+
 #about .about-title {
   color: #333;
   font-weight: 700;
