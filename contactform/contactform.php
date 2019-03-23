@@ -8,7 +8,7 @@
 /***************** Configuration *****************/
 
   // Replace with your real receiving email address
-  $contact_email_to = "caltona1@gmail.com";
+  $contact_email_to = "info@vanpurserfoundation.org";
 
   // Title prefixes
   $subject_title = "Contact Form Message:";
