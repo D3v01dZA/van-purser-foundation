@@ -535,9 +535,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Ride Section
 --------------------------------*/
 #ride {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/ride-bg.jpg") fixed center center;
+  background: url("../img/ride-bg.jpg") fixed center center;
   background-size: cover;
+}
+
+#ride .ride-container {
+  background: rgba(0, 0, 0, 0.8);
   padding: 80px 0 60px 0;
+}
+
+#ride .section-title {
+  color: #fff;
+}
+
+#ride .section-description {
+  color: #999;
 }
 
 #ride .service-item {
@@ -573,13 +585,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
-#ride .service-title a {
-  color: #111;
+#ride .service-title span {
+  color: #fff;
 }
 
 #ride .service-description {
   margin-left: 80px;
   line-height: 24px;
+  color: #999;
 }
 
 /* Contact Section
