@@ -566,13 +566,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 2px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid #fff;
+  background: #03C4EB;
   color: #fff;
+  border: 2px solid #03C4EB;
 }
 
 #donate .donate-btn:hover {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
+  border: 2px solid #fff;
+  background: none;
+  color: #fff;
 }
 
 
