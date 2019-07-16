@@ -540,19 +540,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 18px 0;
 }
 
-#donate .donate-title {
+#donate .section-title {
   color: #fff;
-  font-size: 28px;
-  font-weight: 700;
 }
 
-#donate .donate-text {
-  color: #fff;
+#donate .section-description {
+  color: #999;
+  margin-bottom: 20px;
 }
 
 #donate .donate-btn-container {
   text-align: center;
-  padding-top: 20px;
 }
 
 #donate .donate-btn {
@@ -639,6 +637,63 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: 80px;
   line-height: 24px;
   color: #999;
+}
+
+/* Sponsor Section
+--------------------------------*/
+#sponsor {
+    background: #fff;
+    padding: 80px 0;
+}
+
+#sponsor .sponsor-item {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 130px;
+    width: 100%;
+    display: table;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+#sponsor .sponsor-item .details {
+    height: 130px;
+    background: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    opacity: 0;
+    transition: 0.3s;
+    text-align: center;
+}
+
+#sponsor .sponsor-item .details h4 {
+    font-size: 16px;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translate3d(0, -15px, 0);
+    font-weight: 700;
+    color: #333333;
+}
+
+#sponsor .sponsor-item .details span {
+    display: block;
+    color: #666666;
+    font-size: 13px;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translate3d(0, 15px, 0);
+}
+
+#sponsor .sponsor-item:hover .details {
+    opacity: 0.8;
+}
+
+#sponsor .sponsor-item:hover .details h4 {
+    transform: translate3d(0, 0, 0);
+}
+
+#sponsor .sponsor-item:hover .details span {
+    transform: translate3d(0, 0, 0);
 }
 
 /* Contact Section
