@@ -507,6 +507,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+@media (min-width: 768px) {
+  #about .about-img {
+    padding-top: 13px;
+  }
+}
+
 #about .about-content {
   background: #fff;
 }
