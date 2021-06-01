@@ -481,60 +481,117 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
-/* Get Started Section
+/* Foundation Section
 --------------------------------*/
-#about {
+#foundation {
   background: #fff;
   padding: 80px 0;
 }
 
-#about .about-img {
+#foundation .foundation-img {
   overflow: hidden;
   text-align: center;
 }
 
-#about .about-img img {
+#foundation .foundation-img img {
   max-width: 100%;
 }
 
 @media (max-width: 768px) {
-  #about .about-img {
+  #foundation .foundation-img {
     height: auto;
   }
-  #about .about-img img {
+  #foundation .foundation-img img {
     margin-left: 0;
     padding-bottom: 30px;
   }
 }
 
 @media (min-width: 768px) {
-  #about .about-img {
+  #foundation .foundation-img {
     padding-top: 13px;
   }
 }
 
-#about .about-content {
+#foundation .foundation-content {
   background: #fff;
 }
 
 @media (max-width: 800px) {
-  #about .about-content {
+  #foundation .foundation-content {
     text-align: center;
   }
 }
 
-#about .about-title {
+#foundation .foundation-title {
   color: #333;
   font-weight: 700;
   font-size: 28px;
 }
 
-#about .about-text {
+#foundation .foundation-text {
   line-height: 26px;
   margin-bottom: 15px;
 }
 
-#about .about-text:last-child {
+#foundation .foundation-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Leadership Section
+--------------------------------*/
+#leadership {
+  background: #fff;
+  padding: 80px 0;
+}
+
+#leadership .leadership-img {
+  overflow: hidden;
+  text-align: center;
+}
+
+#leadership .leadership-img img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  #leadership .leadership-img {
+    height: auto;
+  }
+  #leadership .leadership-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  #leadership .leadership-img {
+    padding-top: 13px;
+  }
+}
+
+#leadership .leadership-content {
+  background: #fff;
+}
+
+@media (max-width: 800px) {
+  #leadership .leadership-content {
+    text-align: center;
+  }
+}
+
+#leadership .leadership-title {
+  color: #333;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+#leadership .leadership-text {
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+#leadership .leadership-text:last-child {
   margin-bottom: 0;
 }
 

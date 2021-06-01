@@ -59,9 +59,21 @@ jQuery(document).ready(function( $ ) {
   // Stick the header at top on scroll
   $("#header").sticky({topSpacing:0, zIndex: '50'});
 
+  function page(show, hide) {
+    show.forEach(item => $(item).show());
+    hide.forEach(item => $(item).hide());
+  }
+
   // Smoth scroll on page hash links
   $('a[href*="#"]:not([href="#"])').on('click', function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          if (this.hash === '#leadership') {
+            page(['#leadership'], ['#foundation', '#ride', '#sponsor'])
+          } else if (this.hash === '#foundation') {
+            page(['#foundation'], ['#leadership', '#ride', '#sponsor'])
+          } else if (this.hash === '#ride') {
+            page(['#ride', '#sponsor'], ['#foundation', '#leadership'])
+          }
           var target = $(this.hash);
           if (target.length) {
               
@@ -75,10 +87,8 @@ jQuery(document).ready(function( $ ) {
                   scrollTop: target.offset().top - top_space
               }, 1500, 'easeInOutExpo');
 
-              if ( $(this).parents('.nav-menu').length ) {
-                $('.nav-menu .menu-active').removeClass('menu-active');
-                $(this).closest('li').addClass('menu-active');
-              }
+              $('.nav-menu .menu-active').removeClass('menu-active');
+              $(`#nav-menu-container a[href='${this.hash}']`).closest('li').addClass('menu-active');
 
               if ( $('body').hasClass('mobile-nav-active') ) {
                   $('body').removeClass('mobile-nav-active');
