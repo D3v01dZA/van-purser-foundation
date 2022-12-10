@@ -68,11 +68,13 @@ jQuery(document).ready(function( $ ) {
   $('a[href*="#"]:not([href="#"])').on('click', function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           if (this.hash === '#leadership') {
-            page(['#leadership'], ['#foundation', '#ride', '#sponsor'])
+            page(['#leadership'], ['#foundation', '#ride', '#sponsor', "#raffle"])
           } else if (this.hash === '#foundation') {
-            page(['#foundation'], ['#leadership', '#ride', '#sponsor'])
+            page(['#foundation'], ['#leadership', '#ride', '#sponsor', "#raffle"])
           } else if (this.hash === '#ride') {
-            page(['#ride', '#sponsor'], ['#foundation', '#leadership'])
+            page(['#ride', '#sponsor'], ['#foundation', '#leadership', "#raffle"])
+          } else if (this.hash === '#raffle') {
+            page(['#raffle'], ['#foundation', '#leadership', '#ride', '#sponsor'])
           }
           var target = $(this.hash);
           if (target.length) {
