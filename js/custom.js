@@ -68,14 +68,12 @@ jQuery(document).ready(function( $ ) {
   $('a[href*="#"]:not([href="#"])').on('click', function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           if (this.hash === '#leadership') {
-            page(['#leadership'], ['#foundation', '#ride', '#sponsor', "#raffle"])
+            page(['#leadership'], ['#foundation', '#ride', '#sponsor'])
           } else if (this.hash === '#foundation') {
-            page(['#foundation'], ['#leadership', '#ride', '#sponsor', "#raffle"])
+            page(['#foundation'], ['#leadership', '#ride', '#sponsor'])
           } else if (this.hash === '#ride') {
-            page(['#ride', '#sponsor'], ['#foundation', '#leadership', "#raffle"])
-          } else if (this.hash === '#raffle') {
-            page(['#raffle'], ['#foundation', '#leadership', '#ride', '#sponsor'])
-          }
+            page(['#ride', '#sponsor'], ['#foundation', '#leadership'])
+          } 
           var target = $(this.hash);
           if (target.length) {
               
